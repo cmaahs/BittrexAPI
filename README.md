@@ -1,10 +1,10 @@
 # BittrexAPI
 Powershell Module for accessing the Bittrex Marketplace via their API
 
-SHORT DESCRIPTION
+## SHORT DESCRIPTION
     Implementation of the Bittrex CryptoCurrency Exchange Website API
 
-LONG DESCRIPTION
+## LONG DESCRIPTION
     A set of Powershell CmdLets to allow a user to interact with their Bittrex
     website account from the Powershell command line.
 
@@ -62,7 +62,7 @@ LONG DESCRIPTION
 
     Trading Tips:   cmaahs@outlook.com
 
-EXAMPLES
+## EXAMPLES
     ** INFORMATIONAL CmdLets **
     Get-Markets | Where-Object { $_.MarketName.Contains("EMC") }
     Get-Currencies
