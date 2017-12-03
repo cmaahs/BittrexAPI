@@ -7,7 +7,7 @@ if ( Test-Path $userModulePath )
     {
         New-Item -Path $modulePath -ItemType Directory
     }
-    Get-ChildItem -Filter * | Unblock-File
+    Get-ChildItem -Filter * -Recurse | Unblock-File
     Copy-Item -Path .\Account -Destination $modulePath\Account
     Copy-Item -Path .\Account\* -Destination $modulePath\Account
     Copy-Item -Path .\Calculations -Destination $modulePath\Calculations
