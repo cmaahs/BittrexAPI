@@ -5,7 +5,7 @@ Powershell Module for accessing the Bittrex Marketplace via their API
     Download and extract the zip, or clone the repository.  
     
 ### Installation
-    Open a Powershell windows and change to the source directory.
+    Open a Powershell window and change to the source directory.
     Run the following commands:
 
     >Unblock-File Install-AsModuleInUserModuleDirectory.ps1
