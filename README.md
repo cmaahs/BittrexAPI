@@ -1,6 +1,37 @@
 # BittrexAPI
 Powershell Module for accessing the Bittrex Marketplace via their API
 
+## Getting Started
+    Download and extract the zip, or clone the repository.  
+    
+### Installation
+    Open a Powershell windows and change to the source directory.
+    Run the following commands:
+
+    >Unblock-File Install-AsModuleInUserModuleDirectory.ps1
+    >.\Install-AsModuleInUserModuleDirectory.ps1
+
+    This will install into your User Documents\WindowsPowershell\Modules
+    directory.  You check check for a successful installation with this 
+    command:
+
+    >Get-Module -ListAvailable | Where-Object { $_.Path -like "*Documents*" }
+        You should see BittrexAPI in the module list.
+
+    >Import-Module BittrexAPI
+    >Get-Command -Module BittrexAPI
+        This will list the available commands.
+
+### Setup Account
+    Create a "READ INFO" key/secret pair on the Bittrex website.
+    
+    >Save-BittrexAPIKeys -Key 'your key' -Secret 'your secret'
+        Read below on the use of -PIN to add a layer of security
+    
+### Run your first query    
+    >Get-Balances
+          
+
 ## SHORT DESCRIPTION
     Implementation of the Bittrex CryptoCurrency Exchange Website API
 
